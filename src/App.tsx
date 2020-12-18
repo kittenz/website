@@ -14,15 +14,15 @@ class App extends React.Component {
 		<Router data-testid="app-router">
 			<Switch>
 				{/* Home page */}
-				<Route path="/">
+				<Route path="/" exact>
 					<HomePage />
 				</Route>
-				<Route path="/home">
+				<Route path="/home" exact>
 					<HomePage />
 				</Route>
 
 				{/* Portfolio page */}
-				<Route path="/portfolio">
+				<Route path="/portfolio" exact>
 					<PortfolioPage />
 				</Route>
 			</Switch>
