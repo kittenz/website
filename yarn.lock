@@ -2370,6 +2370,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/body-parser@npm:*":
+  version: 1.19.0
+  resolution: "@types/body-parser@npm:1.19.0"
+  dependencies:
+    "@types/connect": "*"
+    "@types/node": "*"
+  checksum: 4576f3fde5980c1219cadbc7c523bdb1cefc3713300e18bf47ff37bb9b8176342a1dc7519008311fd8fc11413cf188a83931b9b59051aa1c2f095c1e10459369
+  languageName: node
+  linkType: hard
+
+"@types/connect@npm:*":
+  version: 3.4.34
+  resolution: "@types/connect@npm:3.4.34"
+  dependencies:
+    "@types/node": "*"
+  checksum: 6f712a0408ed119a42037bcbc38c12e053d3ffe11337221a3966c9e29a21c8455e331fe2116c426361c0b2c0e44cb3fb1f83594326e42ba34ce4723d726b7d30
+  languageName: node
+  linkType: hard
+
 "@types/eslint@npm:^7.2.4":
   version: 7.2.5
   resolution: "@types/eslint@npm:7.2.5"
@@ -2391,6 +2410,29 @@ __metadata:
   version: 0.0.39
   resolution: "@types/estree@npm:0.0.39"
   checksum: 43e5361de39969def145f32f4599391ab13055ec94841f1633a7cfe10f0e8a940ebf0e9a4b2770454a6bddd034b57e7e0d51a4d565cb2714ee2accf10a7718be
+  languageName: node
+  linkType: hard
+
+"@types/express-serve-static-core@npm:*":
+  version: 4.17.17
+  resolution: "@types/express-serve-static-core@npm:4.17.17"
+  dependencies:
+    "@types/node": "*"
+    "@types/qs": "*"
+    "@types/range-parser": "*"
+  checksum: 97a4f64b6153503146ff8a689d0647d2cbb5ea316bdf3844e799330591b8cde848f7f51dfe202d1cb7a4fffdd2e22b488b486215f8f51e486700e03995407c23
+  languageName: node
+  linkType: hard
+
+"@types/express@npm:^4.17.9":
+  version: 4.17.9
+  resolution: "@types/express@npm:4.17.9"
+  dependencies:
+    "@types/body-parser": "*"
+    "@types/express-serve-static-core": "*"
+    "@types/qs": "*"
+    "@types/serve-static": "*"
+  checksum: 80cd74784e9b40495b683b6b285be58bd7515f3b86923a72483fb8a6dec15ef159e651c460a215e9ad4e9620deec7345020fe33535c4eb12d81152b74b0278d0
   languageName: node
   linkType: hard
 
@@ -2476,6 +2518,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/mime@npm:*":
+  version: 2.0.3
+  resolution: "@types/mime@npm:2.0.3"
+  checksum: 6df548a912494f8579d548cd883be0425f30eaa2922283335c405e270600f49045a06d766460c0f0edabb41dff570c614d174d3c52215de3bddd11f190ec9ae9
+  languageName: node
+  linkType: hard
+
 "@types/minimatch@npm:*":
   version: 3.0.3
   resolution: "@types/minimatch@npm:3.0.3"
@@ -2529,6 +2578,20 @@ __metadata:
   version: 1.5.4
   resolution: "@types/q@npm:1.5.4"
   checksum: 1a19cf2c41648b862bd25a4c26ba33dc7206f14fcf50c5b78031b59090d21176e703cd10aff8af409eafbefcebb288607d30af765ee3859637cf3fae6e875648
+  languageName: node
+  linkType: hard
+
+"@types/qs@npm:*":
+  version: 6.9.5
+  resolution: "@types/qs@npm:6.9.5"
+  checksum: afe4721a802a4b5fa874a7d6d9fd33c9e812bb0ef90dabb050e8072be4ab2e5e817c0feacb9b4e0771d875de99f4d9738217976aeb8d36b81ccd82ded5e9fdc0
+  languageName: node
+  linkType: hard
+
+"@types/range-parser@npm:*":
+  version: 1.2.3
+  resolution: "@types/range-parser@npm:1.2.3"
+  checksum: 092fabae0ecbd728d3e4debc938cd043e97cb9f210cfec1c56ff6065c6e91666f376eb586591825d6757a058fd1a1dc4831d34e04ecfbb0800f35b8d86d38635
   languageName: node
   linkType: hard
 
@@ -2597,6 +2660,16 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: f54f13e4b6ac46a6c7bde9e609cd730f4369b434aa59c5230478b9262bb75e7349c3247fd2cdb917e98d053a57f5609dd552379c612a720b59a8714914d324ed
+  languageName: node
+  linkType: hard
+
+"@types/serve-static@npm:*":
+  version: 1.13.8
+  resolution: "@types/serve-static@npm:1.13.8"
+  dependencies:
+    "@types/mime": "*"
+    "@types/node": "*"
+  checksum: 39db4c0f0f1c459588609496f92c2cb084b7feca8b9f96ac5032e371f8a0f4923c32dc9b7fd005b8bb6d10aad5d9118238da4869647672441571ff20bcbe4ea4
   languageName: node
   linkType: hard
 
@@ -13272,6 +13345,15 @@ resolve@1.18.1:
   checksum: 97e8c94ec02950d019000ca12a8e0b4fdeaaabb7ae965c1c05557b55b48114716ae92688972a8d9f06a5e2d5957c305253a859ec223bb39a1e0732366d0e2768
   languageName: node
   linkType: hard
+
+"server@workspace:packages/server":
+  version: 0.0.0-use.local
+  resolution: "server@workspace:packages/server"
+  dependencies:
+    "@types/express": ^4.17.9
+    express: ^4.17.1
+  languageName: unknown
+  linkType: soft
 
 "set-blocking@npm:^2.0.0, set-blocking@npm:~2.0.0":
   version: 2.0.0
