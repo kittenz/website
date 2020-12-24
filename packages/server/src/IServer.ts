@@ -1,8 +1,8 @@
 interface IServer {
 	port: number;
 
-	startServer: () => null;
-	stopServer: () => null;
+	startServer: () => void;
+	stopServer: () => void;
 }
 
 export { IServer };
