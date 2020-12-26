@@ -28,7 +28,14 @@ class HomePage extends React.Component {
 				},
 				mainContent: {
 					backgroundColor: theme.palette.background.paper,
-					padding: theme.spacing(8, 0, 6)
+					padding: theme.spacing(8, 8, 6)
+				},
+				heroContainer: {
+					display: "flex",
+					flexDirection: "column"
+				},
+				heroItem: {
+					alignSelf: "center"
 				}
 			});
 		});
@@ -49,8 +56,8 @@ class HomePage extends React.Component {
 			</AppBar>
 			<main>
 				<div className={this.classes.mainContent}>
-					<Container maxWidth="sm">
-						<Typography component="h1" variant="h2" align="center" color="textPrimary">
+					<Container className={this.classes.heroContainer} maxWidth="sm">
+						<Typography component="h1" variant="h2" color="textPrimary" className={this.classes.heroItem} align="center">
 							Kittenz
 						</Typography>
 					</Container>
