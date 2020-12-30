@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
 	entry: "./src/index.ts",
@@ -20,6 +21,14 @@ module.exports = {
 					// Compiles Sass to CSS
 					"sass-loader"
 				]
+			},
+			{
+				test: /\.(png|jpe?g|gif|svg)$/i,
+				use: [
+					{
+						loader: "file-loader"
+					}
+				]
 			}
 		]
 	},
@@ -31,13 +40,24 @@ module.exports = {
 		path: path.resolve(__dirname, "dist"),
 		publicPath: "./public"
 	},
+	optimization: {
+		minimize: true,
+		minimizer: [
+
+		]
+	},
 	devServer: {
 		port: 3000,
-		contentBase: path.join(__dirname, "public/"),
+		contentBase: path.join(__dirname, "./public"),
 		publicPath: "http://localhost:3000/dist/",
 		hotOnly: true
 	},
 	plugins: [
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		new CopyPlugin({
+			patterns: [
+				{ from: "./public/*.html", to: "./dist" }
+			]
+		})
 	]
 }

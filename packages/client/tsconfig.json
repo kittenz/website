@@ -7,7 +7,7 @@
 			"esnext"
 		],
 		"jsx": "react-jsx",
-		"outDir": "./dist/tsc",
+		"outDir": "./dist",
 		"strict": true,
 		"noImplicitAny": true,
 		"skipLibCheck": true,
