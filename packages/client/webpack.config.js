@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const CopyPlugin = require("copy-webpack-plugin");
+const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 
 module.exports = {
 	entry: "./src/index.ts",
@@ -43,7 +44,7 @@ module.exports = {
 	optimization: {
 		minimize: true,
 		minimizer: [
-
+			new HtmlMinimizerPlugin()
 		]
 	},
 	devServer: {

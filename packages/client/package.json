@@ -1,8 +1,8 @@
 {
   "name": "client",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack"
+    "build": "webpack --mode=production",
+    "start": "webpack --mode=development && webpack serve --open"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^7.0.0",
