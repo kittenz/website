@@ -4797,6 +4797,7 @@ __metadata:
   dependencies:
     copy-webpack-plugin: ^7.0.0
     file-loader: ^6.2.0
+    html-minimizer-webpack-plugin: ^2.0.0
     react: ^17.0.1
     react-dom: ^17.0.1
     sass: ^1.30.0
@@ -7971,7 +7972,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"html-minifier-terser@npm:^5.0.1":
+"html-minifier-terser@npm:^5.0.1, html-minifier-terser@npm:^5.1.1":
   version: 5.1.1
   resolution: "html-minifier-terser@npm:5.1.1"
   dependencies:
@@ -7985,6 +7986,22 @@ fsevents@~2.1.2:
   bin:
     html-minifier-terser: cli.js
   checksum: d05dea891f5977a35691306b1fb40438cffd6620c2f5a69d7ecb67bfa836af1d36c24978edd1616dc6d27e230561bd756c5f11b3054e6ebf2f8448289e3ca73d
+  languageName: node
+  linkType: hard
+
+"html-minimizer-webpack-plugin@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "html-minimizer-webpack-plugin@npm:2.0.0"
+  dependencies:
+    html-minifier-terser: ^5.1.1
+    jest-worker: ^26.5.0
+    loader-utils: ^2.0.0
+    p-limit: ^3.0.2
+    schema-utils: ^3.0.0
+    serialize-javascript: ^5.0.1
+  peerDependencies:
+    webpack: ^5.1.0
+  checksum: 092e39eaa125cdbb5b616e0c0680ddc8e00e7774bcd10051e93d2ed79c002426131986f91e2059f10c1fbc4b306d70535ae70e7f74e5a0c5e3bcd35667e9675c
   languageName: node
   linkType: hard
 

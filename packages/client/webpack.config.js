@@ -30,6 +30,17 @@ module.exports = {
 						loader: "file-loader"
 					}
 				]
+			},
+			{
+				test: /\.html$/i,
+				use: [
+					{
+						loader: "file-loader",
+						options: {
+							name: "[name].[ext]",
+						}
+					}
+				]
 			}
 		]
 	},
