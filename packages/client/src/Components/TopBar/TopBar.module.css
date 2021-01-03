@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.TopBar {
+	width: 100%;
+	padding: 20px;
+	background-color: lightslategrey;
+	display: flex;
+}
+
+.Logo {
+	display: flex;
+	flex-basis: 50%;
+}
+
+.LogoImage {
+	width: 64px;
+}
+
+.LogoText {
+	margin-left: 10px;
+	font-family: "Source Code Pro", monospace;
+	font-size: 24px;
+	line-height: 20px;
+	display: inline;
+}
+
+.NavigationContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.NavigationLink {
+	font-family: "Roboto", sans-serif;
+}
+
+/* Phone layout */
+@media (max-width: 800px) {
+
+}
