@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+@keyframes PageLoad {
+	from { transform: translate(0px, -84px); }
+	to { transform: translate(0px, 0px); }
+}
+
 .TopBar {
 	width: 100%;
 	padding: 20px;
 	background-color: lightslategrey;
 	display: flex;
+	animation: PageLoad 1s;
 }
 
 .Logo {
