@@ -10,13 +10,15 @@
 	width: 100%;
 	padding: 20px;
 	background-color: lightslategrey;
-	display: flex;
 	animation: PageLoad 1s;
+	display: flex;
+	justify-content: space-between;
 }
 
 .Logo {
 	display: flex;
-	flex-basis: 50%;
+	width: min-content;
+	align-self: center;
 }
 
 .LogoImage {
@@ -33,11 +35,18 @@
 
 .NavigationContainer {
 	display: flex;
-	justify-content: center;
+	width: min-content;
+	align-self: center;
+	justify-content: space-around;
 }
 
 .NavigationLink {
 	font-family: "Roboto", sans-serif;
+	flex-basis: 1cm;
+}
+
+.Divider {
+	width: 20px;
 }
 
 /* Phone layout */
