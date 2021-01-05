@@ -1,6 +1,11 @@
 import React from "react";
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+} from "react-router-dom";
 
-import TopBar from "../Components/TopBar/TopBar";
+import HomePage from "../Pages/HomePage/HomePage";
 
 class App extends React.Component {
 	constructor(props: any) {
@@ -8,15 +13,17 @@ class App extends React.Component {
 	}
 
 	render = () => (
-		<div className="App">
-			<header>
-				<TopBar />
-			</header>
-
-			<main>
-				
-			</main>
-		</div>
+		<Router>
+			<Switch>
+				{/* Home page */}
+				<Route path="/" exact>
+					<HomePage />
+				</Route>
+				<Route path="/home" exact>
+					<HomePage />
+				</Route>
+			</Switch>
+		</Router>
 	);
 }
 
