@@ -14,7 +14,7 @@ class HomePage extends React.Component {
 			</header>
 
 			<main>
-				
+				<p>Home</p>
 			</main>
 		</div>
 	);

@@ -14,7 +14,7 @@ class PortfolioPage extends React.Component {
 			</header>
 
 			<main>
-				
+				<p>Portfolio</p>
 			</main>
 		</div>
 	);
