@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-import CopyrightNotice from "../src/components/CopyrightNotice/CopyrightNotice";
+import CopyrightNotice from "../components/CopyrightNotice/CopyrightNotice";
 
 import styles from "../styles/Home.module.css";
 

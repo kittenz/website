@@ -32,3 +32,37 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+###### APP #######
+# dependencies
+/src/app/node_modules
+/src/app/.pnp
+/src/app/.pnp.js
+
+# testing
+/src/app/coverage
+
+# next.js
+/src/app/.next/
+/src/app/out/
+
+# production
+/src/app/build
+
+# misc
+/src/app/.DS_Store
+/src/app/*.pem
+
+# debug
+/src/app/npm-debug.log*
+/src/app/yarn-debug.log*
+/src/app/yarn-error.log*
+
+# local env files
+/src/app/.env.local
+/src/app/.env.development.local
+/src/app/.env.test.local
+/src/app/.env.production.local
+
+# vercel
+/src/app/.vercel
