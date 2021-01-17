@@ -21,7 +21,7 @@ class Home extends React.Component {
 				<ul className="navbar-nav">
 					{/* Start */}
 					<li className="nav-item">
-						<img src="images/logo.png" width="64" height="64" className="rounded"></img>
+						<img src="images/logo.png" width="64" height="64" className="rounded" />
 					</li>
 
 					{/* Center */}
@@ -34,7 +34,10 @@ class Home extends React.Component {
 
 					{/* End */}
 					<li className="nav-item">
-					<p>sdaadasd</p>
+						<ul className="navbar-nav">
+							<li className="nav-item"><p>Log in</p></li>
+							<li className="nav-item"><p>Settings</p></li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
