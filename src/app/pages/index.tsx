@@ -5,12 +5,8 @@ import CopyrightNotice from "../components/CopyrightNotice/CopyrightNotice";
 
 import styles from "../styles/Home.module.css";
 
-class Home extends React.Component {
-	constructor(props: any) {
-		super(props);
-	}
-
-	render = () => (
+let Home = () => {
+	return (
 		<div id="page-content">
 			<Head>
 				<title>Kittenz • Home</title>
