@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 import CopyrightNotice from "../components/CopyrightNotice/CopyrightNotice";
 
@@ -17,7 +18,7 @@ let Home = () => {
 				<ul className="navbar-nav">
 					{/* Start */}
 					<li className="nav-item">
-						<img src="images/logo.png" width="64" height="64" className="rounded" />
+						<Link href="/"><img src="images/logo.png" width="64" height="64" className="rounded" /></Link>
 					</li>
 
 					{/* Center */}
@@ -31,7 +32,7 @@ let Home = () => {
 					{/* End */}
 					<li className="nav-item">
 						<ul className="navbar-nav">
-							<li className="nav-item"><p>Log in</p></li>
+							<li className="nav-item"><Link href="/account/login">Log in</Link></li>
 							<li className="nav-item"><p>Settings</p></li>
 						</ul>
 					</li>
