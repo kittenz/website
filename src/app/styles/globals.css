@@ -76,9 +76,15 @@ header {
 
 main {
 	height: 100%;
-	width: 100%;
+	width: auto;
+	padding-left: 3%;
+	padding-right: 3%;
 }
 
 footer {
-	
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	left: 0;
+	bottom: 0;
 }
