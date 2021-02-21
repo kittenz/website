@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-import CopyrightNotice from "../../components/CopyrightNotice/CopyrightNotice";
+import CopyrightNotice from "../../components/CopyrightNotice";
 
 let Login = () => {
 	return (

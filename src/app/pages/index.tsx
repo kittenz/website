@@ -6,7 +6,7 @@ import CopyrightNotice from "../components/CopyrightNotice/CopyrightNotice";
 
 import styles from "../styles/Home.module.css";
 
-let Home = () => {
+const Home = () => {
 	return (
 		<div id="page-content">
 			<Head>
