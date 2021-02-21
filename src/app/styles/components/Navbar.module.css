@@ -1,0 +1,26 @@
+.navbar {
+	height: 75px;
+	width: 100%;
+
+	margin: 0;
+
+	background: darkgray;
+}
+
+.navbarNav {
+	height: 100%;
+	width: 100%;
+
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	list-style-type: none;
+}
+
+.navItem {
+	padding: 10px;
+}
