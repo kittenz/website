@@ -9,7 +9,8 @@
     "dev-app": "cd ./src/app && yarn dev",
     "build-app": "cd ./src/app && yarn build",
     "start-app": "cd ./src/app && yarn start",
-    "export-app": "cd ./src/app && yarn export"
+    "export-app": "cd ./src/app && yarn export",
+    "deploy-app": "firebase deploy --only hosting"
   },
   "devDependencies": {
     "firebase-tools": "^9.5.0"
