@@ -30,7 +30,6 @@ const Navbar = () => {
 					{/* End */}
 					<li className={styles.navItem}>
 						<ul className={styles.navbarNav}>
-							<li className={styles.navItem}><Link href="/account/login">Log in</Link></li>
 							<li className={styles.navItem}><p>Settings</p></li>
 						</ul>
 					</li>
