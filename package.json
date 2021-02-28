@@ -10,5 +10,8 @@
     "build-app": "cd ./src/app && yarn build",
     "start-app": "cd ./src/app && yarn start",
     "export-app": "cd ./src/app && yarn export"
+  },
+  "devDependencies": {
+    "firebase-tools": "^9.5.0"
   }
 }
