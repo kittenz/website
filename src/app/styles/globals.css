@@ -1,16 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
 
-/* Animation stuff */
-@keyframes pageload-header {
-	from {
-		transform: translateY(-100);
-	}
-
-	to {
-		transform: translateY(0);
-	}
-}
-
 :root {
 	font-size: 16px;
 }
@@ -24,67 +13,10 @@ body::-webkit-scrollbar {
 	width: 0.5rem;
 }
 
-body::-webkit-scrollbar-track {
-	
-}
-
-body::-webkit-scrollbar-thumb {
-	
-}
-
 .rounded {
 	border-radius: 8.3px;
 }
 
-.logo-text {
-	font-family: "Roboto Mono", monospace;
-}
-
-.navbar {
-	height: 75px;
-	width: 100%;
-
-	margin: 0;
-
-	background: darkgray;
-}
-
-.navbar-nav {
-	height: 100%;
-	width: 100%;
-
-	margin: 0;
-	padding: 0;
-
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-
-	list-style-type: none;
-}
-
-.nav-item {
-	padding: 10px;
-}
-
-header {
-	width: 100%;
-	padding: 20px;
-	margin: 0;
-	background-color: lightslategray;
-}
-
-main {
-	height: 100%;
-	width: auto;
-	padding-left: 3%;
-	padding-right: 3%;
-}
-
-footer {
-	position: fixed;
-	width: 100%;
-	text-align: center;
-	left: 0;
-	bottom: 0;
+.text-primary {
+	color: white;
 }
