@@ -13,6 +13,6 @@
     "deploy-app": "firebase deploy --only hosting"
   },
   "devDependencies": {
-    "firebase-tools": "^9.5.0"
+    "firebase-tools": "^9.8.0"
   }
 }
