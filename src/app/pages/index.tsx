@@ -1,66 +1,59 @@
-import React, { createRef, useRef } from "react";
+import React, { createRef, useRef, useEffect } from "react";
 import Head from "next/head";
 
-import styles from "../styles/Home.module.css";
+import CommonMetaTags from "components/metaTags/CommonMetaTags";
+import TwitterCard from "components/metaTags/TwitterCard";
 
-class Home extends React.Component {
-	logoContainerRef: React.RefObject<HTMLDivElement>;
-	textRef: React.RefObject<HTMLDivElement>;
+import styles from "./HomePage.module.css";
 
-	constructor(props: any) {
-		super(props);
+interface Props {}
 
-		this.logoContainerRef = createRef();
-		this.textRef = createRef();
-	}
+function HomePage(props: Props) {
+	const logoContainer = useRef<HTMLDivElement>(null);
+	const text = useRef<HTMLDivElement>(null);
 
-	componentDidMount = () => {
-		if (this.logoContainerRef && this.logoContainerRef.current) {
-			this.logoContainerRef.current.className += ` ${styles.animateLogoContainer}`;
+	useEffect(() => {
+		document.onreadystatechange = () => {
+			if (document.readyState === "complete") {
+				if (logoContainer.current) {
+					logoContainer.current.className = `${styles.logoContainer} ${styles.animateLogoContainer}`
+				}
+
+				if (text.current) {
+					text.current.className = `text-primary ${styles.animateText}`;
+				}
+			}
 		}
-
-		if (this.textRef && this.textRef.current) {
-			this.textRef.current.className += ` ${styles.animateText}`;
-		}
-	}
-
-	render = () => (
-		<div className={styles.page}>
-			<Head>
-				<title>Kittenz • Home</title>
-			</Head>
-
-			<main className={styles.main}>
-				<div ref={this.logoContainerRef} className={styles.logoContainer}>
-					<img src="images/logo.png" className={`rounded ${styles.logo}`} />
-					<h1 className={styles.logoText}>Kittenz</h1>
-				</div>
-
-				<div ref={this.textRef} className={`text-primary ${styles.text}`} style={{textAlign: "center"}}>
-					<p>Hi! I'm Kittenz.</p>
-					<br />
-					<p>My website is coming soon.</p>
-				</div>
-			</main>
-		</div>
-	);
-}
-
-/*
-const Home = () => {
-	const logoContainerRef = useRef(null);
-	const textRef = useRef(null);
-
-	document.onreadystatechange = () => {
-		if (document.readyState === "complete") {
-			
-		}
-	}
+	}, []);
 
 	return (
-		
+		<>
+			<Head>
+				<title>Home • Kittenz</title>
+
+				<CommonMetaTags />
+
+				<meta name="description" content="Hello! I'm Kittenz, a Roblox & web developer." />
+				<meta name="author" content="Kittenz" />
+
+				<TwitterCard description="Hello! I'm Kittenz, a Roblox & web developer." />
+			</Head>
+
+			<div className="page">
+				<main className="main">
+					<div ref={logoContainer} className={`${styles.logoContainer} hidden`}>
+						<img src="images/logo.png" className={`rounded ${styles.logo}`} />
+						<h1 className={styles.logoText}>Kittenz</h1>
+					</div>
+
+					<div ref={text} className="text-primary hidden" style={{textAlign: "center"}}>
+						<p>Hi! I'm Kittenz.</p>
+						<p>I'm a Roblox scripter and a web developer.</p>
+					</div>
+				</main>
+			</div>
+		</>
 	);
 }
-*/
 
-export default Home;
+export default HomePage;

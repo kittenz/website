@@ -17,6 +17,31 @@ body::-webkit-scrollbar {
 	border-radius: 8.3px;
 }
 
+.hidden {
+	visibility: hidden;
+}
+
 .text-primary {
 	color: white;
+}
+
+.page {
+	width: 100vw;
+	height: 100vh;
+
+	background-image: url("../public/images/background.jpg");
+	background-size: cover;
+
+	position: relative;
+}
+
+.main {
+	position: absolute;
+
+	left: 50vw;
+	top: 50vh;
+
+	height: auto;
+
+	transform: translate(-50%, -50%);
 }
